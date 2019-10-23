@@ -13,16 +13,46 @@
   <link rel="stylesheet" href="normalize.css">
   <!-- 외부 적용 -->
   <link rel="stylesheet" href="main.css">
+  <!-- 10월2일 webfont -->
+  <link rel="stylesheet" href="menu.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>Header Area</header>
+
+<!-- 10월 11일: 풀스크린 배경 -->
+  <header class="full-bg">
+    <div class="container">
+      <div class="header-title">
+        JEON PIL WON 홈페이지
+        <p class="header-sub-title"></p>
+        전필원의 홈페이지 입니다.<br />
+        2019학년 2학기 실습 내용을 정리했습니다.
+        <a class="ghost-button" href="#">Ghost Button Sample</a>
+      </div>
+    </div>
+  </header>
+
+ 
+  
+
 <!-- ul-li를 이용한 메인 메뉴 -->
-  <nav>
+<nav class="fixed-top menu">
     <ul>
-      <li class="home-title">전 필원</li>
-      <li><a href="#">메뉴1</a></li>
-      <li><a href="#">메뉴2</a></li>
-      <li><a href="#">메뉴3</a></li>
+      <li class="home-title"><a href="#">전 필원</a></li>
+      <li><a href="#">One Page Site</a>
+        <ul>
+          <li><a href="#inline-bluck">inline-bluck</a></li>
+          <li><a href="#image">image</a></li>
+          <li><a href="#audio-video">audio-video</a></li>
+          <li><a href="#Youtubu">Youtubu</a></li>
+          <li><a href="#table">table</a></li>
+          <li><a href="#grid">grid</a></li>
+          <li><a href="#css-grid">css-grid</a></li>
+        </ul>
+      </li>
+      <li><a href="#9-27">메뉴2</a></li>
+      <li><a href="#10-2">메뉴3</a></li>
       <li><a href="#">메뉴4</a></li>
       <li><a href="#">메뉴5</a></li>
     </ul>
@@ -63,33 +93,75 @@
     </section>
   </article>
 
-  <article class="article-4-bg">
-    <h2>9월27일 : 유튜브 삽입</h2>
-    <video controls>
-    <source src="https://www.youtube.com/embed/bbSJK9BZfos" type="">
-    </video>
+  <article class="article-4rd-bg">
+      <h2>9월 27일 : 유튜브 삽입</h2>
+     <section>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/I3dezFzsNss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
   </article>
 
-  <table border ="1">
-    <tr>
-      <th colspan="4">테이블 연습</th>
-    </tr>
-    <tr>
-      <th rowspan="5">줄 합치기 </td></th>
-      <th colspan="4">칸 합치기</th>
-      <tr></tr>
-      <td>1</td> <td>2</td> <td>3</td>
-  </tr></tr>
-  <tr><td>4 <td>5</td> <td>6</td></tr>
-  <tr><td>7 <td>8</td> <td>9</td></tr>
-  </table>
+  <article class="article-5rd-bg">
+      <table style= "margin: auto; text-align: center;" border = 1>
+      
+        <tr>
+          <th colspan="4">테이블 연습</th>
+        </tr>
+        <tr>
+            <th rowspan="4">줄합치기</th>
+            <td colspan="3">칸합치기</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+     </article>
+     
 
-  <article>
-    <section>1st Section Area</section>
-    <section>2nd Section Area</section>
-    <section>3rd Section Area</section>
+    <section class="section-title"><h2>9월27일 : Grid 연습</h2></section>
+  <article class="article-left">
+    <h2>왼쪽</h2>
+    <h1><bold></bold><br></br>
+    </h1>
   </article>
-  <aside>Aside Area</aside>
-  <footer>Footer Area</footer>
+  <article class="article-right">
+      <h2>오른쪽</h2>
+
+      <h1><bold></bold><br></br>
+      </h1>
+      
+    </article>
+
+    <article class="grid-container">
+      <div class="grid-item item1">10월2일 : CSS Grid</div>
+      <div class="grid-item item2">2</div>
+      <div class="grid-item item3">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+      <div class="grid-item item10">10</div>
+    </article>
+
+<aside class="aside-bg">
+    안녕하세요 !!
+  </aside>
+  <footer class="footer-bg">
+    Copyright&copy;2019.DongWook.All rights reserved. 
+  </footer>
+
 </body>
 </html>
