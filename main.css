@@ -1,10 +1,19 @@
 /*
- * main.css v0.3.0
- * Update: 2019.09.20
+ * main.css v0.1.0
+ * Update: 2019.09.27
  * Author: DongWook.Synn
  */
 
  /* main menu */
+ .fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/*
 ul {
   background: rgb(49, 49, 49);
   height: 30px;
@@ -22,23 +31,172 @@ ul li a {
   font-size: 20px;
   font-weight: bold;
   text-decoration: none
-}
+} */
 
 /* Home Title */
 .home-title {
-  color: rgb(159, 185, 255);
+  color: white;
   font-size: 20px;
   font-weight: bold;
   margin-right: 50px;
 }
 
+/* 10.11  백그라운트 배경 넣기 */
+.full-bg {
+  background: url(./images/n-EIFFEL-TOWER-628x314.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: table;
+}
+
+.container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.header-title {
+  display: inline-block;
+  width: 50%;
+  height: 140px;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 25px;
+  background: skyblue;
+  color:#fff;
+}
+.header-sub-title {
+  font-size:20px;
+  color:rgb(255, 244, 180);
+}
+
 /* article background */
 .article-bg {
-  background-color: rgb(104, 104, 175);
+  background-color:palevioletred;
   color: rgb(255, 255, 255);
   text-align: center;
   height: 300px;
   padding: 15px;
+}
+
+.article-2nd-bg {
+  background-color: skyblue;
+  color: black;
+  text-align: center;
+  height: 300px;
+  padding: 15px;
+}
+
+.article-3rd-bg {
+  background-color: burlywood;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+}
+
+.article-4rd-bg {
+  background-color:skyblue;
+  color: black;
+  text-align: center;
+  padding: 15px;
+
+}
+
+.article-5rd-bg {
+  background-color:grey;
+  color: white;
+  text-align: center;
+  padding: 15px;
+
+}
+
+.article-left {
+  float: left;
+  width: 50%;
+  background-color:palevioletred;
+  text-align: center;
+
+}
+.article-right {
+  width: 50%;
+  float: right;
+  background-color:orange;
+  text-align: center;
+
+}
+
+.image-cropper-50 {
+  height: 200px;
+  margin: 15px;
+  width: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.image-cropper-25 {
+  height: 200px;
+  margin: 15px;
+  width: 200px;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  -ms-border-radius: 25%;
+  -o-border-radius: 25%;
+  border-radius: 25%;
+}
+
+.image-cropper-5 {
+  height: 200px;
+  margin: 15px;
+  width: 200px;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  border-radius: 5%;
+}
+
+.section-title {
+  background: skyblue;
+  color: rgb(255, 255, 255);
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* css grid */
+.grid-container {
+  background-color: gray;
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255);
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+.item1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+.item2 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+.item3 {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+}
+.item10 {
+  grid-column: 2 / span 2;
+  grid-row: 5;
 }
 
 /* margin, padding, border test */
@@ -50,4 +208,34 @@ ul li a {
   padding: 10px;
   width: 20%;
   height: 50%;
+}
+
+/* aside background */
+.aside-bg {
+  border: 5px solid orange;
+  height: 150px;
+  padding: 15px;
+}
+/* footer background */
+.footer-bg {
+  background-color: rgb(73, 73, 73);
+  color: aliceblue;
+  height: 40px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+.ghost-button {
+  align-items: center;
+  display: inline-block;
+  padding: 25px 40px;
+  margin: 150px 70px;
+  color:white;
+  border: 3px solid white;
+  text-align: center;
+}
+
+.ghost-button:hover {
+  background-color: skyblue;
+  color:white
 }
