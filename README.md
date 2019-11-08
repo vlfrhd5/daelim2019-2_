@@ -41,6 +41,3 @@
 > 4. css 초기화 ( v0.1.0 )
 > 5. 메뉴 생성 ( v0.2.0 )
 > 6. 1st article : margin, padding, border test ( v0.3.0 )
-
-
-
