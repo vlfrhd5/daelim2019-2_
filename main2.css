@@ -11,6 +11,7 @@
   right: 0;
   left: 0;
   z-index: 1030;
+  
 }
 
 /*
@@ -40,6 +41,7 @@ ul li a {
   font-weight: bold;
   margin-right: 50px;
   text-align: center;
+  
 }
 
 /* 10.11  백그라운트 배경 넣기 */
@@ -245,6 +247,35 @@ ul li a {
   background-color: darkolivegreen;
   color: white;
   text-align: center;
-  padding: 200px;
+  padding: 370px;
   font-size: 30PX;
 }
+
+.FED2 {
+    background-color: rgb(146, 146, 146);
+    color: white;
+    text-align: center;
+    padding: 150px;
+    font-size: 20PX;
+  }
+
+.ahtml5 {
+    background-color: white;
+    color: darkslategrey;
+    text-align: center;
+    padding: 30px;
+    font-size: 20pX;
+  }
+
+  
+.FED3 {
+    background-color:rgb(31, 31, 31);
+    color: white;
+    text-align: center;
+    padding: 100px;
+    font-size: 20PX;
+  }
+
+  .button22 {
+    text-align: center;
+  }
